@@ -14,11 +14,12 @@
     <li>{{autor.nombre}} ( {{autor.apellido}})</li>
     <li>{{autor.biografia}}</li>
 {% endfor %}
+{% endif %}
 </ul>
 
-{% endif %}
-{% if not autores_encontrado %}
-<br>
-No se encontró el autor buscado :(
-{% endif %}
+ 
+    {% if not autores_encontrado %}
+  <br>
+    No se encontró el autor buscado :(
+    {% endif %}
 {% endblock %}

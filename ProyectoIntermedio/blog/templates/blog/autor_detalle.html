@@ -7,14 +7,7 @@
 <p>Nombre del autor: <i>{{ autor.nombre }} </i> </p>
 <p>Apellido: <i> {{ autor.apellido }}</i></p>
 <p>Biografía: <i> {{ autor.biografia }}</i></p>
-<nav class="navbar">
-    <br>
-    <br>
-    {% if avatar %}
-        <img height="80px" src="{{ avatar }}"/>
-        
-    {% endif %}
-</nav>
+
 <a href="{% url 'autor-lista' %}">Volver a lista</a>
 
 {% endblock %}

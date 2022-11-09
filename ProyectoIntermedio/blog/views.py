@@ -138,14 +138,22 @@ class AutorDetalle(LoginRequiredMixin, DetailView):
 
 class AutorCreacion(LoginRequiredMixin, CreateView):
     model = Autor
-    fields = ["nombre", "apellido", "biografia", "imagen"]
+    fields = [
+        "nombre",
+        "apellido",
+        "biografia",
+    ]
     success_url = "/blog/autor-lista"
 
 
 class AutorUpdateView(LoginRequiredMixin, UpdateView):
     model = Autor
     success_url = "/blog/autor-lista"
-    fields = ["nombre", "apellido", "biografia", "imagen"]
+    fields = [
+        "nombre",
+        "apellido",
+        "biografia",
+    ]
 
 
 class AutorDelete(LoginRequiredMixin, DeleteView):

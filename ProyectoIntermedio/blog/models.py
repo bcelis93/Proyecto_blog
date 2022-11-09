@@ -11,7 +11,6 @@ class Autor(models.Model):
     nombre = models.CharField(max_length=30)
     apellido = models.CharField(max_length=30)
     biografia = models.CharField(max_length=300)
-    imagen = models.ImageField(upload_to="avatares", null=True, blank=True)
 
     def __str__(self):
         return f"({self.apellido}) {self.nombre}, {self.biografia}"
